@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chippy Platformer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/png" href="icon.png" style="border-radius: 5px;">
+</head>
+<body>
+ <button id="reset-btn" style="
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  z-index: 1000;
+  cursor: pointer;
+">Reset</button>
+
+<button id="pause-btn" style="
+  position: fixed;
+  top: 10px;
+  right: 100px;  /* moved right to 100px to be to the left of Reset */
+  padding: 8px 16px;
+  font-size: 16px;
+  z-index: 1000;
+  cursor: pointer;
+">Pause</button>
+
+<div id="credit">Made by Lucas Fielding</div>
+
+
+  <div id="game">
+    <img id="player" src="player.png" />
+    <img class="platform" src="platform.png" style="left: 100px; top: 300px;" />
+    <img class="platform" src="platform.png" style="left: 300px; top: 250px;" />
+    <img class="platform" src="platform.png" style="left: 500px; top: 200px;" />
+    <div id="lava"></div>
+    <img class="bone" src="bone.png" style="left: 150px; top: 250px;" />
+    <img class="bone" src="bone.png" style="left: 350px; top: 200px;" />
+    <img class="bone" src="bone.png" style="left: 550px; top: 150px;" />
+    <div id="bone-counter">Bones: 0</div>
+    <img src="cat.png" class="cat" id="cat">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
